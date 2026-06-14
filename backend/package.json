@@ -1,0 +1,9 @@
+{
+  "name": "smartreach-crm-backend-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd ../smartreach-crm/backend && npm install --production",
+    "start": "cd ../smartreach-crm/backend && npm start"
+  }
+}
