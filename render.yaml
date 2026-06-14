@@ -13,3 +13,12 @@ services:
         sync: false
       - key: FRONTEND_URL
         sync: false
+  
+  - type: web
+    name: smartreach-crm-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://smartreach-crm-backend.onrender.com/api
